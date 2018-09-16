@@ -1,6 +1,6 @@
-FROM  centos:7
+FROM ubuntu:latest
 
 ENV PATH=$PATH:/bin/:/usr/bin/
 
-#RUN yum update
-RUN yum install -y doxygen graphviz graphviz-gd
+RUN apt update
+RUN apt-get install -y doxygen graphviz*
