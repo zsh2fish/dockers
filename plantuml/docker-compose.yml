@@ -2,4 +2,4 @@ plantuml-server:
   image: plantuml/plantuml-server
   restart: always
   ports:
-    - "13080:8080"
+    - "50001:8080"
