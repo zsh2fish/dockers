@@ -1,0 +1,8 @@
+#!/bin/sh
+
+(
+    dir="$(cd "$(dirname "$1")" && pwd)"
+    name="$(basename "$1")"
+
+    docker run --rm -v "${dir}:/scripts" koalaman/shellcheck "/scripts/${name}"
+)

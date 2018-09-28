@@ -8,3 +8,4 @@
 
 ## No port
 - doxygen
+- shellcheck
