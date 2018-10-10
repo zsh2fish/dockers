@@ -9,3 +9,4 @@
 ## No port
 - doxygen
 - shellcheck
+- centos6 32bit
