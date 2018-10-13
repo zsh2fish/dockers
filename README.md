@@ -1,5 +1,6 @@
 # Docker Containers
 ## Port
+- 69: tftp
 - 50001: plantuml server
 - 50002: hackmd
 - 50003: growi

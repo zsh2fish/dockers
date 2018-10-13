@@ -1,0 +1,16 @@
+version: '3.0'
+services:
+  tftp:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: tftp_container
+    #environment:
+      #- http_proxy=http://proxy.com:8080
+      #- https_proxy=http://proxy.com:8080
+    ports:
+      - 69:69/udp
+    privileged: true
+    volumes:
+      - ./data:/var/lib/tftp
+
