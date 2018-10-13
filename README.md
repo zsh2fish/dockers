@@ -1,5 +1,6 @@
 # Docker Containers
 ## Port
+- 53: dnsmasq
 - 69: tftp
 - 50001: plantuml server
 - 50002: hackmd
