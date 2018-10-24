@@ -8,6 +8,7 @@
 - 50003: growi
 - 50004: wekan
 - 50005: redmine
+- 50006-50008: gitlab-ce
 
 ## No port
 - doxygen

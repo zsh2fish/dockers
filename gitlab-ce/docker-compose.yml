@@ -1,0 +1,15 @@
+version: '3'
+services:
+  gitlab-ce:
+    image: gitlab/gitlab-ce:latest
+    container_name: gitlab_container
+    volumes:
+      - ./data/gitlab/config:/etc/gitlab
+      - ./data/gitlab/logs:/var/log/gitlab
+      - ./data/gitlab/data:/var/opt/gitlab
+    ports:
+      - "10080:80"
+      - "10443:443"
+      - "10022:22"
+    #hostname: '192.168.1.150' # Host's IP address
+    #restart: always
